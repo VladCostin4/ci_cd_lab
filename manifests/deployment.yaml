@@ -6,7 +6,8 @@ metadata:
     app: go-simple-webserver
 spec:
   syncPolicy:
-    automated: {}
+    automated:
+      prune: true
   replicas: 2
   selector:
     matchLabels:
